@@ -1,0 +1,19 @@
+package Exercice;
+
+import java.util.*;
+
+public class ContainsDuplicate {
+    public boolean containsDuplicate(int[] nums) {
+
+        Set<Integer> numbers = new HashSet<>();
+        for (int i = 0; i < nums.length; i++) {
+                if(!numbers.add(nums[i])){
+                    return true;
+                }
+
+        }
+
+        return false;
+    }
+
+}
