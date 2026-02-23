@@ -7,10 +7,12 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-        GroupAnagrams groupAnagrams = new GroupAnagrams();
-        String[] list  = {"eat","tea","tan","ate","nat","bat"};
 
-        System.out.print(groupAnagrams.groupAnagrams(list));
+        TopKFrequent topKFrequent = new TopKFrequent();
+        int[] list  = {1,2,1,2,1,2,3,1,3,2};
+
+
+        System.out.print(Arrays.toString(topKFrequent.topKFrequent(list, 2)));
 
 
 
